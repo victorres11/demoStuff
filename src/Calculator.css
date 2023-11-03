@@ -6,10 +6,16 @@
   padding: 2em;
 }
 
+h1, h2 {
+    margin-bottom: 20px;
+  text-align: center;  
+}
 /* Titles */
 .title {
   font-weight: bold;
   margin-bottom: 0.5em;
+  margin-bottom: 20px;
+  text-align: center;  
 }
 
 .subtitle {

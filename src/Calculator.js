@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Calculator.css';  // Make sure you've created and added the styles here.
 
 function Calculator() {
+  const navigate = useNavigate();
   const [loanAmount, setLoanAmount] = useState(5000);
   const [term, setTerm] = useState(6);
 
@@ -49,7 +50,7 @@ function Calculator() {
         ))}
       </div>
 
-      <button className="continue-button">Continue</button>
+      <button onClick={() => navigate('/upload')}>Continue</button>
 
       <p>Your estimated monthly payment: ${monthlyPayment.toFixed(2)}</p>
     </div>
